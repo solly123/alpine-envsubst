@@ -9,5 +9,3 @@ RUN \
     apk add --virtual build_deps $BUILD_DEPS &&  \
     cp /usr/bin/envsubst /usr/local/bin/envsubst && \
     apk del build_deps
-
-ENTRYPOINT /usr/local/bin/envsubst
