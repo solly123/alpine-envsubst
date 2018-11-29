@@ -2,5 +2,5 @@
 
 for configfile in $*
 do
-    substenv < $configfile > $configfile 
+    envsubst < $configfile > $configfile 
 done
