@@ -1,6 +1,9 @@
 #!/bin/sh
 
-for configfile in $*
+sourcefolder=$1
+destfolder=$2
+
+for file in sourcefolder/*
 do
-    envsubst < $configfile > $configfile 
+    envsubst < $file > $destfolder/$(basename $file) 
 done
